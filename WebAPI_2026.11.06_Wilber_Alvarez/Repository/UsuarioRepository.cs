@@ -15,7 +15,8 @@ namespace WebAPI_2026._11._06_Wilber_Alvarez.Repository
 
         public async Task<Usuario?> Get(int id) {
             
-            return await _appDbContext.Usuarios.AsNoTracking().FirstOrDefaultAsync(u  => u.Id == id);
+            return await _appDbContext.Usuarios.AsNoTracking().
+                FirstOrDefaultAsync(u  => u.Id == id);
         }
 
         public async Task<List<Usuario>> GetAll() { 

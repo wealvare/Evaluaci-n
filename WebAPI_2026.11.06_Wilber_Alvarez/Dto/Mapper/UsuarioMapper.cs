@@ -22,10 +22,12 @@ namespace WebAPI_2026._11._06_Wilber_Alvarez.Dto.Mapper
         {
             return new UsuarioResponseDto
             {
+
                 Id = entity.Id,
                 Nombre = entity.Nombre,
                 Telefono= entity.Telefono,
                 Email = entity.Email,
+
             };
         }
     }
